@@ -1,4 +1,4 @@
-# DevOps : application fil rouge
+# DevOps : application du cours
 
 Dépôt du cours DevOps, Master 1, ESGIS. Il contient l'application que vous faites
 évoluer d'une séance à l'autre.
@@ -11,8 +11,8 @@ Dépôt du cours DevOps, Master 1, ESGIS. Il contient l'application que vous fai
 - **MySQL** : une instance unique qui héberge deux bases, `products_db` et `orders_db`,
   créées par les scripts de `db/init`.
 
-Par défaut, chaque service garde ses données en mémoire : aucune base n'est nécessaire
-pour le lancer, et les données disparaissent à l'arrêt du service.
+Par défaut, chaque service garde ses données en mémoire : il démarre sans base de
+données, et les données disparaissent à l'arrêt du service.
 
 ## Arborescence
 
@@ -125,8 +125,8 @@ Réponse de la création :
 {"id":1,"productId":1,"productName":"Clavier mécanique","quantity":2,"unitPrice":49.9,"total":99.8,"createdAt":"..."}
 ```
 
-orders n'a reçu qu'un identifiant et une quantité. Il a obtenu le nom et le prix auprès
-de products, puis calculé le total.
+orders reçoit un identifiant et une quantité, obtient le nom et le prix auprès de
+products, puis calcule le total.
 
 Produit inconnu de products :
 
@@ -145,8 +145,8 @@ Arrêtez products avec Ctrl+C, puis relancez la création de commande. orders r�
 
 ## Variables d'environnement
 
-Chaque service lit sa configuration dans l'environnement. Aucune valeur n'est écrite
-dans le code en dehors des valeurs par défaut ci-dessous.
+Chaque service lit sa configuration dans l'environnement. Le code contient uniquement
+les valeurs par défaut ci-dessous.
 
 | Variable | Service | Défaut | Rôle |
 | --- | --- | --- | --- |

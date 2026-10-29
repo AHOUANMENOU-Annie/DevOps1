@@ -2,7 +2,7 @@
   "name": "orders",
   "version": "1.0.0",
   "private": true,
-  "description": "Service orders de l'application fil rouge",
+  "description": "Service orders de l'application du cours",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

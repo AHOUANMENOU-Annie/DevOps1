@@ -2,7 +2,7 @@
   "name": "products",
   "version": "1.0.0",
   "private": true,
-  "description": "Service products de l'application fil rouge",
+  "description": "Service products de l'application du cours",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
