@@ -1,0 +1,18 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Service products de l'application fil rouge",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
