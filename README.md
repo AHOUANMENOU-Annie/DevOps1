@@ -32,6 +32,8 @@ db/
     02-orders.sql          base orders_db, utilisateur orders_user, table orders
 seance-01/
   diagnostic.sh            vérification du poste
+seance-02/
+  diagnostic.sh            vérification du poste
 ```
 
 ## Lancer products en local
